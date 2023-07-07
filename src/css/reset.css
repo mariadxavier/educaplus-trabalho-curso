@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Luckiest Guy', cursive, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color-primary: #585858;
+    --color-secundary: #FFB800;
+    --color-tertiary: #D50B50;
+    --color-quartenary: #50b3bc;
+    --color-black: #000;
+    --color-white:  #FFF;
+}
