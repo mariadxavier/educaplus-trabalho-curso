@@ -396,3 +396,19 @@ hr {
 
 }
 
+@media screen and (min-width: 319px) and (max-width: 424px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .introducao {
+        margin-top: 10vh;
+        padding: auto;
+    }
+
+    .introducao h1 {
+        font-size: 3rem;
+    }
+}
+
