@@ -15,14 +15,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/footer.css">
+    <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="./src/img/image-removebg-preview (1) 2.png" alt="logo" width="48px">
+        <a href="#">
+            <img src="./src/img/image-removebg-preview (1) 2.png" alt="logo" width="48px">
+        </a>
         <h1>EDUCA+</h1>
-        <nav>
+        <img src="./src/img/3pontos-removebg-preview.png" alt="menu de navegação" class="menu-mobile"
+            onclick="abrirMenu()">
+
+
+        <nav id="menu-mobile">
             <ul>
+                <li>
+                    <div class="gtranslate_wrapper"></div>
+                </li>
                 <a href="#">
                     <li>Início</li>
                 </a>
@@ -64,14 +74,13 @@
                         <p>
                             Clique para acessar nosso conteúdo
                         </p>
-                        <a href="#" class="button">
+                        <a href="../sites-secundarios/site-xenofobia/xenofobia-traduzido.html" class="button">
                             Leia mais </a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./src/img/racismo-card.jpg"
-                        alt="">
+                    <img src="./src/img/racismo-card.jpg" alt="">
                     <div class="card-content">
                         <h2>
                             Racismo
@@ -79,14 +88,13 @@
                         <p>
                             Clique para acessar nosso conteúdo
                         </p>
-                        <a href="#" class="button">
+                        <a href="../sites-secundarios/site-racismo/racismo.html" class="button">
                             Leia mais </a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./src/img/especismo-card.jpg"
-                        alt="">
+                    <img src="./src/img/especismo-card.jpg" alt="">
                     <div class="card-content">
                         <h2>
                             Especismo
@@ -94,14 +102,13 @@
                         <p>
                             Clique para acessar nosso conteúdo
                         </p>
-                        <a href="#" class="button">
+                        <a href="../sites-secundarios/site-especismo/especismo.html" class="button">
                             Leia mais </a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./src/img/intolerancia-religiosa-card.jpeg"
-                        alt="">
+                    <img src="./src/img/intolerancia-religiosa-card.jpeg" alt="">
                     <div class="card-content">
                         <h2>
                             Intolerância Religiosa
@@ -109,14 +116,14 @@
                         <p>
                             Clique para acessar nosso conteúdo
                         </p>
-                        <a href="#" class="button">
+                        <a href="../sites-secundarios/site-intolerancia-religiosa/intolerancia-religiosa.html"
+                            class="button">
                             Leia mais </a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./src/img/nais-card.jpeg"
-                        alt="">
+                    <img src="./src/img/nais-card.jpeg" alt="">
                     <div class="card-content">
                         <h2>
                             Nazismo
@@ -124,7 +131,7 @@
                         <p>
                             Clique para acessar nosso conteúdo
                         </p>
-                        <a href="#" class="button">
+                        <a href="../sites-secundarios/site-nazismo/nazismo.html" class="button">
                             Leia mais </a>
                     </div>
                 </div>
@@ -135,7 +142,7 @@
             <div class="texto-brinde">
                 <h1>RESPONDA AO NOSSO QUESTIONÁRIO E GANHE UM BRINDE!</h1>
 
-                <a href="">
+                <a href="../sites-secundarios/site-formulario/formulario.html">
                     <h2>ADQUIRA JÁ!</h2>
                 </a>
             </div>
@@ -143,9 +150,7 @@
 
 
             <img src="./src/img/Rectangle 176.png" alt="" class="retangulo-amarelo">
-            <svg class="onda-amarela" style="width: 528px; 
-            height: 280px;
-            flex-shrink: 0;
+            <svg class="onda-amarela" style="flex-shrink: 0;
             stroke-width: 100px;
             stroke: #FFB800;" xmlns="http://www.w3.org/2000/svg" width="430" height="365" viewBox="0 0 430 365"
                 fill="none">
@@ -207,6 +212,15 @@
 
         <p class="rodape-direitos">&copy; 2023 - Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById("menu-mobile").classList.toggle("show");
+        }
+    </script>
+
+    <script>window.gtranslateSettings = { "default_language": "pt", "languages": ["pt", "en", "ar", "fr", "ru", "es", "zh-CN"], "wrapper_selector": ".gtranslate_wrapper", "flag_size": 24, "alt_flags": { "en": "usa", "pt": "brazil" } }</script>
+
 </body>
 
 </html>
