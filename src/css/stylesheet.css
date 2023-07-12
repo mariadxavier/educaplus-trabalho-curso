@@ -1,12 +1,11 @@
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
 }
 
-section, footer  {
-    scroll-snap-align: center;
+.menu-mobile {
+    display: none;
 }
+
 
 header {
     display: flex;
@@ -201,6 +200,8 @@ hr {
 .onda-amarela {
     left: 350px;
     z-index: 1;
+    width: 528px; 
+    height: 280px;
 }
 
 .texto-brinde {
@@ -237,6 +238,161 @@ hr {
 .secao-brindes h2:hover {
     scale: 1.1;
     box-shadow: 6px 6px 8px #00000073;
+
+}
+
+/* ------------Responsivo----------------------- */
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+    .cards-acesso {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secao-brindes {
+        height: fit-content;
+    }
+
+    .texto-brinde {
+        padding: 30px;
+        align-items: center;
+    }
+
+    .onda-amarela {
+        width: 328px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .secao-introducao {
+        width: 100%;
+    }
+    .secao-introducao img{
+        width: 330px;
+        height: 330px;
+    }
+
+    .introducao h1{
+        width: 60%;
+        font-size: 3rem;
+    }
+
+    .cards-acesso {
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+    
+    .retangulo-amarelo {
+        width: 45%;
+    }
+
+    .onda-amarela{
+        left: 50px
+    }
+
+    .secao-brindes img {
+        object-fit: cover;
+    }
+
+    .texto-brinde {
+        width: 60%;        
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) { /* celular */
+    .secao-introducao img{
+        width: 330px;
+        height: 330px;
+    }
+
+    .secao-introducao {
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 5vh;
+    }
+
+    .introducao {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .secao-cards-acesso {
+        width: 100%;
+        
+    }
+
+    .cards-acesso {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .onda-amarela {
+        display: none;
+    }
+
+    .secao-brindes {
+        height: 100vh;
+        background-color: var(--color-secundary);
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .foto-brinde {
+        position: absolute;
+        width: 80%;
+        justify-self: center;
+        margin: 10%;
+        border-radius: 8px;
+    }
+
+    .retangulo-amarelo  {
+        display: none;
+    }
+
+    .texto-brinde {
+        /* display: none; */
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 0px;
+        margin: 0;
+        gap: 50vh;
+    }
+
+    .menu-mobile {
+        display: flex;
+        width: 40px;
+    }
+
+    header {
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        height: 88vh;
+        background-color: var(--color-quartenary);
+        padding: 20px;
+        box-shadow: inset 2px 0px 4px #0000005e;
+    }
+
+    header nav a:nth-child(2n-1):hover {
+        background-color: var(--color-tertiary);
+        border-radius: 6px;
+    }
+
+    .show {
+        display: flex;
+        position: fixed;
+        height: 88vh;
+        bottom: 0;
+        align-items: center;    
+    }
 
 }
 
